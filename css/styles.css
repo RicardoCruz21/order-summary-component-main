@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+main{
+    margin: 100px auto;
+    border-radius: 20px;
+    max-width: 450px;
+    text-align: center;
+    background-color: white;
+}
+
+#heroImage{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#orderSummary{
+    padding: 0 50px;
+}
+
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+a{
+    font-weight: 700;
+}
+
+#subscriptionPlan{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 50px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    
+}
+
+#musicIcon{
+    align-self: center;
+}
+
+#pricePlan{
+    text-align: left;
+    grid-column: 2 / span 2;
+    padding-top: 10px;
+}
+
+#changeSub{
+    align-self: center;
+}
+
+#changeSub > a:hover{
+    color: hsl(224, 23%, 55%);;
+}
+
+#btnPayment{
+
+    border: none;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 95px;
+    color: hsl(225, 100%, 98%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 1px 10px 30px grey ;
+    
+
+}
+
+#btnPayment:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+#btnCancel{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 50px;
+    font-weight: 700;
+}
+
+#btnCancel > a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+#btnCancel > a:hover{
+
+    color: hsl(223, 47%, 23%);;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 480px) {
+    
+    body{
+        background-image: url('/images/pattern-background-mobile.svg');
+    }
+    main{
+        max-width: 375px;
+    }
+    #btnPayment{
+        padding: 15px 45px;
+    }
+
+}
